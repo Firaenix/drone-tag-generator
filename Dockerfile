@@ -4,4 +4,4 @@ COPY ./tags.sh .
 
 RUN chmod +x ./tags.sh
 
-CMD bash ./tags.sh
+ENTRYPOINT [ "/tags.sh" ]
